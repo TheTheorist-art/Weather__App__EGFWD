@@ -6,15 +6,14 @@
     <title>Weather Journal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./bootStrap5/bootstrap.min.css">
-    <!-- font Awesome Icons Kit -->
-    <script defer src="https://kit.fontawesome.com/0ddf12056a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./bootStrap5/bootstrap.css">
 </head>
 <body>
     
 
-    <div class="row d-flex">
-        <div id='form' class="col-8 col-md-4  mx-auto mt-5">
-            <div style="text-align: center; margin-bottom: 2.5%;"><i class="fa-solid fa-snowflake fa-5x"></i></div>
+    <div class="row">
+        <div id='form' class="col-7 col-md-4  mx-auto mt-5">
+            <div style="text-align: center;"><i class="fa-solid fa-snowflake fa-5x"></i></div>
             <h2 id="form__title" class="mb-1 text-center"></h2>
             <form id="newform"class="needs-validation" novalidate>
 
@@ -26,12 +25,13 @@
                             <button id="submit__button" type="button" class="d-block btn btn-primary" style="border-radius: 0px 5px 5px 0px;">Submit</button>
                         </div>
                     </div>
+                    <div class="form-group p-1 mt-3">
+                        <label for="username"> Describe Ur Feeling </label>
+    
+                        <input type="text" class="form-control" required />
+                    </div>
                 </div>
-                <div class="form-group p-1 mt-3">
-                    <label for="username"> Describe Ur Feeling </label>
-
-                    <input type="text" class="form-control" required />
-                </div>
+                
                 
                 
             </form>
