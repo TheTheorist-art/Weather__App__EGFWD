@@ -1,0 +1,23 @@
+
+* {
+    overflow: hidden;
+}
+body {
+    background-image: url("https://source.unsplash.com/6vXQrXVFXjI/1600x900");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+}
+label {
+    margin-bottom: 2.5%;
+}
+
+#form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 15%;
+}
+
+
