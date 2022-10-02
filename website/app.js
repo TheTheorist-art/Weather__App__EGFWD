@@ -87,6 +87,7 @@
       // declaring the object that hold the organized data phase
       const data__stage__III = {
         date: dom__wrapper.date,
+        // using math round to display all integers
         temp: Math.round(missy__data.main.temp) + "°F",
         country: `${missy__data.name}, ${missy__data.sys.country}`,
         feeling: `${feeling}`,
