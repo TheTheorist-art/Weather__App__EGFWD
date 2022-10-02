@@ -7,37 +7,51 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./bootStrap5/bootstrap.min.css">
     <link rel="stylesheet" href="./bootStrap5/bootstrap.css">
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/0ddf12056a.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
     
 
     <div class="row">
-        <div id='form' class="col-7 col-md-4  mx-auto mt-5">
+        <div id="form" class="col-10 col-md-4  mx-auto mt-5" style="transition: 2s ease;">
             <div style="text-align: center;"><i class="fa-solid fa-snowflake fa-5x"></i></div>
             <h2 id="form__title" class="mb-1 text-center"></h2>
             <form id="newform"class="needs-validation" novalidate>
 
                 <div class="form-group p-1 mt-2">
-                    <label> Zip Code </label>
+                    <label for="zip"> Zip Code </label>
                     <div class="input-group">
-                        <input type="text" class="form-control" pattern="[0-9]">  
+                        <input type="text" class="form-control" id="zip" placeholder="enter zip code here">  
                         <div class="input-group-append">
-                            <button id="submit__button" type="button" class="d-block btn btn-primary" style="border-radius: 0px 5px 5px 0px;">Submit</button>
+                            <button id="generate" class="d-block btn btn-primary" style="border-radius: 0px 5px 5px 0px;">Submit</button>
                         </div>
                     </div>
                     <div class="form-group p-1 mt-3">
-                        <label for="username"> Describe Ur Feeling </label>
-    
-                        <input type="text" class="form-control" required />
+                        <label for="feelings"> Describe Ur Feeling </label>
+                        <input type="text" class="form-control" id="feelings" placeholder="Describe Ur Feeling" required />
                     </div>
                 </div>
-                
-                
-                
             </form>
         </div>
     </div>
-    <script src="app.js"></script>
-    <script src="https://kit.fontawesome.com/0ddf12056a.js" crossorigin="anonymous"></script>
+    
+        <div id="form" class="shityy col-10 col-md-4  mx-auto mt-5 opacity-0" style="transition: 2s ease;">
+        <div class="row bg-white p-3 rounded-1 gap-1">
+          <div class="col-12 border border-4">
+            <h5 style="text-align: center;" id="city">City: Cairo</h5>
+          </div>
+          <div class="col-12 border border-4">
+            <h5 style="text-align: center;" id="temprature">Temp: 35</h5>
+          </div>
+          <div class="col-12 border border-4">
+            <h5 style="text-align: center;" id="feeling">very exited</h5>
+          </div>
+          <div class="col-12 border border-4">
+            <h5 style="text-align: center;" id="date">Sun Oct 02 2022</h5>
+          </div>
+        </div>
+      </div>
+    
 </body>
 </html>
